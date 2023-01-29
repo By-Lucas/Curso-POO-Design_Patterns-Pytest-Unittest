@@ -10,8 +10,8 @@ class Funcionario:
 
 class Gerente(Funcionario):
 
-    def __init__(self, nome, salario, cpf, senha):
-        super().__init__(nome, salario, cpf)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self.senha = senha
     
     def get_bonificacao(self):
